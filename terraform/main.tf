@@ -1,12 +1,12 @@
-module "sandbox" {
+module "aft-test" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "<ACCOUNT EMAIL>"
-    AccountName               = "sandbox-aft"
+    AccountEmail              = "aravindabi094.terraform.aft@gmail.com"
+    AccountName               = "provisioned_by_aft"
     ManagedOrganizationalUnit = "Learn AFT"
-    SSOUserEmail              = "<SSO EMAIL>"
-    SSOUserFirstName          = "Sandbox"
+    SSOUserEmail              = "aravindabi094.terraform.aft@gmail.com"
+    SSOUserFirstName          = "Learn"
     SSOUserLastName           = "AFT"
   }
 
@@ -23,5 +23,5 @@ module "sandbox" {
     group = "non-prod"
   }
 
-  account_customizations_name = "sandbox"
+  account_customizations_name = "aft-test"
 }
