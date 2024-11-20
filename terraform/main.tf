@@ -11,7 +11,7 @@ module "aft-test" {
   }
 
   account_tags = {
-    "Learn Tutorial" = "AFT"
+    "Learn Tutorial" = "AFT-Test"
   }
 
   change_management_parameters = {
